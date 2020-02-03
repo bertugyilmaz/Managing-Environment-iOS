@@ -15,14 +15,20 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let environmentName: String = try! environment.configuration(.environmentName)
-        let baseUrl: String = try! environment.configuration(.baseUrl)
+        do {
+            let environmentName: String = try environment.configuration(.environmentName)
+            let baseUrl: String = try environment.configuration(.baseUrl)
+                    
+            print(environmentName)
+            print(baseUrl.replacingOccurrences(of: "\\", with: ""))
+                    
+            let missingValue: String = try environment.configuration(.appIconName)
+            print(missingValue)
+            
+        }catch(let error) {
+            print(error.localizedDescription)
+        }
         
-        print(environmentName)
-        print(baseUrl.replacingOccurrences(of: "\\", with: ""))
-        
-//        let missingValue: String = try! environment.configuration(.appIconName)
-//        print(missingValue)
     }
 }
 
