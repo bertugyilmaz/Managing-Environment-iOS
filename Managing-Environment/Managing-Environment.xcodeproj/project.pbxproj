@@ -15,6 +15,7 @@
 		41A54EBF23E848E0008A3655 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A54EBD23E848E0008A3655 /* LaunchScreen.storyboard */; };
 		41A54EDB23E861D2008A3655 /* QA.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41A54ED923E861D2008A3655 /* QA.plist */; };
 		41A54EDC23E861D2008A3655 /* Production.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41A54EDA23E861D2008A3655 /* Production.plist */; };
+		41A54EDE23E863A7008A3655 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A54EDD23E863A7008A3655 /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		41A54ED823E85ED5008A3655 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		41A54ED923E861D2008A3655 /* QA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QA.plist; sourceTree = "<group>"; };
 		41A54EDA23E861D2008A3655 /* Production.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Production.plist; sourceTree = "<group>"; };
+		41A54EDD23E863A7008A3655 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				41A54EC023E848E0008A3655 /* Development.plist */,
 				41A54EDA23E861D2008A3655 /* Production.plist */,
 				41A54ED923E861D2008A3655 /* QA.plist */,
+				41A54EDD23E863A7008A3655 /* Environment.swift */,
 			);
 			path = Environment;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41A54EB723E848DE008A3655 /* ViewController.swift in Sources */,
+				41A54EDE23E863A7008A3655 /* Environment.swift in Sources */,
 				41A54EB323E848DE008A3655 /* AppDelegate.swift in Sources */,
 				41A54EB523E848DE008A3655 /* SceneDelegate.swift in Sources */,
 			);
@@ -279,7 +283,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 41A54ED623E85EA7008A3655 /* Development.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON_NAME)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = A3HAG2VD48;
@@ -362,7 +366,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 41A54ED623E85EA7008A3655 /* Development.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON_NAME)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = A3HAG2VD48;
@@ -445,7 +449,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 41A54ED723E85EB6008A3655 /* QA.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON_NAME)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = A3HAG2VD48;
@@ -528,7 +532,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 41A54ED823E85ED5008A3655 /* Production.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON_NAME)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = A3HAG2VD48;
@@ -604,7 +608,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 41A54ED723E85EB6008A3655 /* QA.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON_NAME)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = A3HAG2VD48;
@@ -681,7 +685,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 41A54ED823E85ED5008A3655 /* Production.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON_NAME)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = A3HAG2VD48;
