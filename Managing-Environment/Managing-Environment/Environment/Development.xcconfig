@@ -9,5 +9,8 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-base_url = "https://www.development.com"
-api_key  = "development apiKey"
+ENVIRONMENT_NAME    = development
+APP_NAME            = dev
+APP_ICON_NAME       = dev_icon
+BASE_URL            = www.development.com
+API_KEY             = Development apiKey

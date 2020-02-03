@@ -9,5 +9,8 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-base_url = "https://www.production.com"
-api_key  = "production apiKey"
+ENVIRONMENT_NAME    = production
+APP_NAME            = Production
+APP_ICON_NAME       = prod_icon
+BASE_URL            = https:\/\/www.production.com
+API_KEY             = production apiKey

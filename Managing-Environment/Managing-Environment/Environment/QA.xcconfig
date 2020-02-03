@@ -9,5 +9,8 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-base_url = "https://www.qa.com"
-api_key  = "qa apiKey"
+ENVIRONMENT_NAME    = quality assurance
+APP_NAME            = QA
+APP_ICON_NAME       = qa_icon
+BASE_URL            = https:\/\/www.qa.com
+API_KEY             = QA apiKey

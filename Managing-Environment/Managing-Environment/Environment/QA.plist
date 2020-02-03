@@ -11,7 +11,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>$(PRODUCT_NAME)</string>
+	<string>$(APP_NAME)</string>
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
@@ -60,9 +60,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>api_key</key>
-	<string>$(api_key)</string>
-	<key>base_url</key>
-	<string>$(base_url)</string>
+	<key>API_KEY</key>
+	<string>$(API_KEY)</string>
+	<key>BASE_URL</key>
+	<string>$(BASE_URL)</string>
+    <key>ENVIRONMENT_NAME</key>
+    <string>$(ENVIRONMENT_NAME)</string>
 </dict>
 </plist>
