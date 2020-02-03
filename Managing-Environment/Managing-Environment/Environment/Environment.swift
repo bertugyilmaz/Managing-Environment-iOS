@@ -11,8 +11,17 @@ import Foundation
 final class Environment {
     static let shared: Environment = Environment()
     
-    enum Error: Swift.Error {
-        case missingKey, castingError
+    enum Error: Swift.Error, LocalizedError {
+        case missingKey(String), castingError
+        
+        var errorDescription: String? {
+            switch self {
+            case .missingKey(let key):
+                return "Cant find '\(key)' key please sure about keys added into your the <ENVIRONMENT_NAME>.Plist file"
+            case .castingError:
+                return "Please check your key type from the <ENVIRONMENT_NAME>.Plist File."
+            }
+        }
     }
     
     enum Keys: String {
@@ -26,7 +35,7 @@ final class Environment {
     func configuration<T>(_ key: Keys) throws -> T {
     
         guard let value = Bundle.main.object(forInfoDictionaryKey: key.rawValue) else {
-            throw Error.missingKey
+            throw Error.missingKey(key.rawValue)
         }
         
         if let value = value as? T {
