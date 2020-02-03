@@ -24,6 +24,9 @@
 		41A54EBB23E848E0008A3655 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41A54EBE23E848E0008A3655 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41A54EC023E848E0008A3655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41A54ED623E85EA7008A3655 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		41A54ED723E85EB6008A3655 /* QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QA.xcconfig; sourceTree = "<group>"; };
+		41A54ED823E85ED5008A3655 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,7 @@
 		41A54EC623E8493D008A3655 /* Environment */ = {
 			isa = PBXGroup;
 			children = (
+				41A54ED523E85E84008A3655 /* Configuration Files */,
 				41A54EC023E848E0008A3655 /* Info.plist */,
 			);
 			path = Environment;
@@ -97,6 +101,16 @@
 				41A54EB823E848DE008A3655 /* Main.storyboard */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		41A54ED523E85E84008A3655 /* Configuration Files */ = {
+			isa = PBXGroup;
+			children = (
+				41A54ED623E85EA7008A3655 /* Development.xcconfig */,
+				41A54ED723E85EB6008A3655 /* QA.xcconfig */,
+				41A54ED823E85ED5008A3655 /* Production.xcconfig */,
+			);
+			name = "Configuration Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

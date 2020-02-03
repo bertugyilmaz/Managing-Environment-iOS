@@ -1,0 +1,13 @@
+//
+//  Development.xcconfig
+//  Managing-Environment
+//
+//  Created by Bertug YILMAZ on 3.02.2020.
+//  Copyright © 2020 bertugyilmaz. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+base_url = "https://www.development.com"
+api_key  = "development apiKey"
